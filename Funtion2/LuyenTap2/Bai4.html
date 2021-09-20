@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function isNumber(input){
+    if (input == parseFloat(input)){
+      return true;
+    } else {
+    return false;
+    }
+  }
+  let input1 = prompt("Nhập vào một chuỗi muốn kiểm tra")
+  let result = isNumber(input1);
+  if(result){
+    alert(input1 + " là số")
+  }else {
+    alert(input1 + " là chuỗi")
+  }
+</script>
+</body>
+</html>
