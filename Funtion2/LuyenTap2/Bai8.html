@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrInt = [1, 4, 5, 7, 2]
+
+    function reverse(arr) {
+        let isArrInt = true;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 1 !== 0) {
+                isArrInt = false;
+                break;
+            }
+        }
+        if (isArrInt) {
+            let firstNum = 0;
+            let lastNum = arr.length - 1;
+            while (firstNum < lastNum) {
+                num = arr[firstNum];
+                arr[firstNum] = arr[lastNum];
+                arr[lastNum] = num;
+                firstNum++;
+                lastNum--;
+            }
+            return arr;
+        }else{
+            return  "Đây ko phải là mảng số nguyên";
+        }
+    }
+
+    let newArr = reverse(arrInt);
+    console.log(newArr);
+
+</script>
+</body>
+</html>
