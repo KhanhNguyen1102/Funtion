@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="input3" >
+<button onclick="result()"> Hiển thị kết quả </button>
+<p id="rs"></p>
+<script>
+  function cal(num){
+    return num + 1;
+  }
+  function result(){
+    let input3 = +document.getElementById("input3").value
+    document.getElementById("rs").innerHTML = "Tổng số nhập vào + 1 = " + cal(input3)
+  }
+
+</script>
+</body>
+
+</html>
