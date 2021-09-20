@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function compare(a,b,c){
+    let max = a;
+    if (b> max){
+      max = b ;
+    }
+    if (c > max){
+      max = c
+    }
+    return max;
+  }
+  let so1 = +prompt("Nhập vào số nguyên thứ nhất")
+  let so2 = +prompt("Nhập vào số nguyên thứ hai")
+  let so3 = +prompt("Nhập vào số nguyên thứ ba")
+  let result = compare(so1,so2,so3);
+  alert("số lớn nhât là " +result);
+</script>
+</body>
+</html>
