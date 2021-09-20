@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let input = +prompt("Điền vào 1 số bất kì")
+  function soNguyenDuong(num){
+    if (num % 1 ===0 && num > 0){
+      return true;
+    }else {
+      return false;
+    }
+  }
+  let result = soNguyenDuong(input);
+  console.log(result);
+</script>
+</body>
+</html>
