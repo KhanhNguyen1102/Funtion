@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let string = prompt("Nhập vào 1 chuỗi kí tự để kiểm tra ")
+    let arrStr = string.split("");
+    let result = isPalindrome(arrStr);
+    if(result){
+        alert("Chuỗi nhập vào là Palindrome")
+    }else {
+        alert("Chuỗi nhập vào ko phải là Palindrome")
+    }
+
+    function isPalindrome(str){
+        if (str.length==0 || str.length==1){
+            return true;
+        }
+        if (str[0] !== str[str.length-1]){
+            return false;
+        }
+        return isPalindrome(str.slice(1,str.length-1));
+    }
+
+</script>
+</body>
+</html>
